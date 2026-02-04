@@ -1,0 +1,22 @@
+#include <snes.h>
+
+int main(void) {
+    // Initialize the SNES console
+    consoleInit();
+
+    // Set text color to white and background to black
+    consoleSetTextVramADR(0x6800);
+    consoleSetTextVramBGADR(0x6000);
+    consoleSetTextPos(10, 12);
+
+    // Print your project name!
+    consoleDrawText(10, 12, "DumbHouse OS");
+
+    // Keep the screen on
+    setScreenOn();
+
+    while (1) {
+        WaitForVBlank();
+    }
+    return 0;
+}
