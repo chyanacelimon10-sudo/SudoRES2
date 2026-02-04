@@ -20,3 +20,7 @@ int main(void) {
     }
     return 0;
 }
+
+// My cool OS
+// Add a space here ^
+consoleDrawText(10, 12, "DumbHouse OS");
